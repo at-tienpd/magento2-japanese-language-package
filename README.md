@@ -31,7 +31,7 @@ php bin/magento indexer:reindex
 
 # Download package
 
-A place where package is set is app/i18nx bin/magento
+A place where package is set is app/i18n
 
 # Run terminal
 
