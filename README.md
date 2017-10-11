@@ -1,10 +1,45 @@
-# magento2-japanese-language-package
+# Magento2-japanese-language-package for Asiantech First Theme (Magento ver. 2.1.7)
 
-- tao 1 new store cho Japan
-- run php bin/magento indexer:reindex
-- set locale option va default country qua Japan
-- set tien te lai cho Japan
-- set currency rates cho Japan
-- tai packge Japanese language ve bo vao folder app/i18n
-- run php bin/magento setup:static-content:deploy ja_JP
-- login vao admin doi ten category va product qua Japanese
+# Create store view for Japan store
+
+1. STORE >> Settings >> All Stores >> Create Store View 
+	+ Name       : Japanese
+	+ Code       : japanese
+	+ Status     : Enabled
+	+ Sort Order : 1
+2. Save Store View
+
+# Run terminal
+
+php bin/magento indexer:reindex
+
+# Set locale and currency for Japan store
+
+1. STORE >> Settings >> Configuration
+2. Set Store View to Japanese
+3. GENERAL >> General
+4. Set Options is Japan
+5. Set Locale Options >> Locale is Japanese(Japan)
+6. GENERAL >> Currency Setup >> Currency Options
+7. Set Default Display Currency is Japanese Yen
+8. Set Allowed Currencies is Japanese Yen
+
+# Set currency rate for Japan store
+
+1. STORE >> Currency >> Currency Rates
+2. Click Import
+
+# Download package
+
+A place where package is set is app/i18nx bin/magento
+
+# Run terminal
+
+php bin/magento setup:static-content:deploy ja_JP
+
+Last one you should be login admin and edit categories and products to Japanese.
+
+# License
+
+TIEN © 2017 Happy coding
+
